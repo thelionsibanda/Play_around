@@ -1,0 +1,269 @@
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    border-radius: 0px;
+}
+
+
+
+
+/*-------- don't use this css its for only top margin   ----------------------*/
+
+.margintop{ margin-top:20px;}
+
+/******************************************************slide***************************************/
+.half {
+  width: 100%;
+}
+
+.a-down {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.a-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  min-width: 150px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  height: 48px;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  border: 2px solid #dd4b39;
+  border-radius: 3px;
+}
+.btn:hover {
+  background: rgba(221, 75, 57, 0.4);
+}
+
+/* slide styles */
+* {
+  box-sizing: border-box;
+}
+
+.slide {
+  color: #555;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-shadow: 7px 2px 2px 8px rgba(230,230,250, .4);
+}
+
+.slide-show {
+  display: flex;
+  width: 300vw;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+}
+
+.slide-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+.slide-item img {
+  width: 100vw;
+  height: 100%;
+}
+
+.slide-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f8f8f8;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+.slide-text div {
+  height: 90%;
+}
+.slide-text div:nth-child(1) {
+  flex-direction: column;
+  padding: 0 5%;
+  align-items: flex-start;
+}
+
+button {
+  margin: 20px;
+}
+
+.slide-indicator {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.slide-indicator .indicator-item {
+  height: 3px;
+  width: 70px;
+  margin: 0 10px;
+  background: rgba(170, 170, 170, 0.3);
+  border: dodgerblue;
+  list-style: none;
+}
+
+[rol="low-indicator"] {
+  display: block;
+  height: 100%;
+  width: 1%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.blur-slide {
+  filter: blur(3px);
+}
+
+/* smartphone */
+@media (max-width: 768px) {
+  .slide {
+    color: #555;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slide-title {
+    font-size: 20px;
+  }
+
+  .indicator-item {
+    height: 2px;
+    width: 50px;
+    margin: 0 10px;
+    background: rgba(170, 170, 170, 0.3);
+    border: dodgerblue;
+    list-style: none;
+  }
+}
+/************************************************************************about******************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+.snip1344 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 0px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #141414;
+  min-height: 200px;
+}
+.snip1344 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1344 .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.2;
+  -webkit-filter: grayscale(100%) blur(10px);
+  filter: grayscale(100%) blur(10px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.snip1344 figcaption {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.snip1344 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.snip1344 h3 {
+  margin: 0 0 5px;
+  font-weight: 400;
+}
+.snip1344 h3 span {
+  display: block;
+  font-size: 0.6em;
+  color: #f39c12;
+  opacity: 0.75;
+}
+.snip1344 i {
+  padding: 10px 5px;
+  display: inline-block;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.65;
+}
+.snip1344 a {
+  text-decoration: none;
+}
+.snip1344 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1344:hover .background,
+.snip1344.hover .background {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* Demo purposes only */
+body {
+  background-image: url('../img/main_slide1.jpg');
+  background-size:cover;
+}
+
+.aboutStuurboi{
+	
+	background-color: #121212;
+	align-items: center;
+	min-height: 200px;
+	color: fff;
+	margin-top: 2vh;
+	overflow: hidden;
+	position: relative;
+	z-index : 1;
+	box-shadow: 7px 2px 2px 8px egba(230,230,250, .4); 
+}
+
+.description{
+	  color: #ffffff;
+}
+
